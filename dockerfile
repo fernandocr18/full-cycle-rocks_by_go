@@ -1,0 +1,6 @@
+FROM scratch
+
+WORKDIR /usr/src/app
+
+COPY ./app/bin .
+ENTRYPOINT [ "./rocks" ]
