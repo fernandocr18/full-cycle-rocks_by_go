@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  gorocks:
+    build: 
+      context: ./rocks
+      dockerfile: ./dockerfile.prod
+    container_name: gorocks
+    entrypoint: ./rocks
